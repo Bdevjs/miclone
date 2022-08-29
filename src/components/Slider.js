@@ -9,11 +9,10 @@ const Slider = ({start}) => {
     {
         start.map((item)=>(
 
-            <Carousel.Item>
+            <Carousel.Item key={item.image} interval={1000} keyboard={true}>
                 <img 
                     className='d-block w-100'
                     src={item}
-
                     alt="First slide" />
 
             </Carousel.Item>
